@@ -14,14 +14,40 @@
   </header>
   <main>
   <form>
+     <label for="name">Name:</label>
+  <input  class="name" type="text" id="name" name="name"  pattern="[A-Za-z]{3,15}"  required >
+  <label for="email">Email:</label>
+  <input class="email" type="email" id="email" name="email" required>
+  <label for="color">Color:</label>
+  <select class="color" id="color" name="color" required>
+    <option value="" disabled selected>Select a color</option>
+    <option value="red">White</option>
+    <option value="blue">Black</option>
+    <option value="green">Grey</option>
+  </select>
+  <label for="size">Size:</label>
+  <select  id="size" name="size" required>
+    <option value="" disabled selected>Select a size</option>
+    <option value="xs">XS</option>
+    <option value="s">S</option>
+    <option value="m">M</option>
+    <option value="l">L</option>
+    <option value="xl">XL</option>
+    <option value="xxl">XXL</option>
+  </select>
+  <label for="delivery">Delivery Date:</label>
+  <input class="delivery" type="date" id="delivery" name="delivery" min="2023-01-19" max="2023-02-19" required>
+  <input class="button" type="submit" value="Submit">
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
   </form>
 
+
   </main>
+ 
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>Luna T-shirts.</h2>
   </footer>
 </body>
 
